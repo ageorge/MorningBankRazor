@@ -1,0 +1,30 @@
+﻿@page
+@model MorningBankRazor.Pages.Transfers.BillPayModel
+
+@{
+    ViewData["Title"] = "BillPay";
+}
+
+<h2>BillPay</h2>
+
+<h4>BillPayment</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <div class="form-group">
+            Bill Name: @Model.bill.BillName
+        </div>
+        <div class="form-group">
+            Bill Status: @Model.bill.Status
+        </div>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+   
+}

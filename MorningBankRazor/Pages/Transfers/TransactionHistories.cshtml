@@ -1,0 +1,58 @@
+﻿@page
+@model MorningBankRazor.Pages.Transfers.TransactionHistoriesModel
+
+@{
+    ViewData["Title"] = "TransactionHistories";
+}
+
+<h2>TransactionHistories</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.transactionHistories[0].TransactionDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transactionHistories[0].CheckingAccountNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transactionHistories[0].SavingAccountNumber)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transactionHistories[0].Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transactionHistories[0].TransactionFee)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.transactionHistories[0].TransactionType.TransactionTypeName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.transactionHistories) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CheckingAccountNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SavingAccountNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionFee)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TransactionType.TransactionTypeName)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

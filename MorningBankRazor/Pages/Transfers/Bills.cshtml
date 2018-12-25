@@ -1,0 +1,49 @@
+﻿@page
+@model MorningBankRazor.Pages.Transfers.BillsModel
+
+@{
+    ViewData["Title"] = "Bills";
+}
+
+<h2>Bills</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BillPayment[0].BillName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillPayment[0].Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillPayment[0].DueDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BillPayment[0].Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.BillPayment) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BillName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DueDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                <a asp-page="./BillPay" asp-route-id="@item.BillId">Pay</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

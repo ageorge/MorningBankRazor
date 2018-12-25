@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MorningBankRazor", "MorningBankRazor\MorningBankRazor.csproj", "{89FB883E-534D-48F8-B9DB-1969BA2665FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89FB883E-534D-48F8-B9DB-1969BA2665FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FB883E-534D-48F8-B9DB-1969BA2665FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FB883E-534D-48F8-B9DB-1969BA2665FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FB883E-534D-48F8-B9DB-1969BA2665FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC3BD60E-CAF9-46BA-B632-B8BDEE653566}
+	EndGlobalSection
+EndGlobal
